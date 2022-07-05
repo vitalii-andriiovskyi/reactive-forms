@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "rf": "apps/rf",
-    "rf-e2e": "apps/rf-e2e"
+    "rf-e2e": "apps/rf-e2e",
+    "translation": "libs/translation"
   }
 }
