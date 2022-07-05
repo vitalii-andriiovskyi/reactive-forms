@@ -1,0 +1,89 @@
+@import 'variables';
+// /* Importing Bootstrap SCSS file. */
+// $primary:       $blue !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-800 !default;
+
+// @import '~bootstrap/scss/functions';
+// @import '~bootstrap/scss/variables';
+// @import '~bootstrap/scss/mixins';
+// @import '~bootstrap/scss/utilities';
+
+// @import '~bootstrap/scss/reboot';
+// @import '~bootstrap/scss/images';
+// @import '~bootstrap/scss/pagination';
+
+@import 'fonts';
+@import 'sg-theme';
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: var(--primary);
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid {
+		border-color: red;
+  }
+	&:required:valid {
+		border-color: green;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body { height: 100%; }
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  box-sizing: border-box;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+	line-height: var(--lineheight);
+	font-family: var(--userfont);
+  font-size: var(--fontsize);
+	color: var(--textcolor);
+}
+
+h1, h2, h3, h4 {
+  color: var(--primary);
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.d-none {
+  display: none;
+}
+
+.t-left {
+  text-align: left;
+}
+.t-center {
+  text-align: center;
+}
+.t-right {
+  text-align: right;
+}
+
+.bg-light {
+  background-color: rgba(#fff, 0.9);
+}
+
