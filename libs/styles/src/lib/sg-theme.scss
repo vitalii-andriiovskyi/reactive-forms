@@ -63,6 +63,9 @@ $sg-blog-theme: mat-light-theme((
 @include mat-progress-spinner-theme($sg-blog-theme);
 @include mat-icon-theme($sg-blog-theme);
 @include mat-button-theme($sg-blog-theme);
+@include mat-input-theme($sg-blog-theme);
+@include mat-autocomplete-theme($sg-blog-theme);
+@include mat-form-field-theme($sg-blog-theme);
 // @include angular-material-theme($sg-blog-theme);
 
 
