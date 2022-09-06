@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@reactive-forms/styles": ["libs/styles/src/index.ts"],
+      "@reactive-forms/translation": ["libs/translation/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

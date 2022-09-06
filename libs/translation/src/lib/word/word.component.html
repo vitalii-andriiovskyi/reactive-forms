@@ -1,0 +1,14 @@
+<div [formGroup]="search">
+  <mat-form-field appearance="outline" class="w400">
+    <mat-label>Your word</mat-label>
+    <input matInput formControlName="word" [matAutocomplete]="auto">
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option *ngFor="let word of filteredWords$ | async" [value]="word">
+        {{word}}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+  <div class="mat-error mat-form-field mat-custom-error" *ngIf="(wordNotFoundError$ | async) as errMsg">
+    {{errMsg}}
+  </div>
+</div>

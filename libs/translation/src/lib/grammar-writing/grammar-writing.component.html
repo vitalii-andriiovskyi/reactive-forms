@@ -1,0 +1,9 @@
+<div [formGroup]="grammar">
+  <mat-form-field appearance="outline" class="w400">
+    <mat-label>Write translation</mat-label>
+    <input matInput formControlName="wordTranslated">
+  </mat-form-field>
+  <div class="mat-error mat-form-field mat-custom-error" *ngIf="(wordNotFoundError$ | async) as errMsg">
+    {{errMsg}}
+  </div>
+</div>

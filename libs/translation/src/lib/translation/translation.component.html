@@ -1,0 +1,9 @@
+<ng-container *ngIf="form">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <tr-word></tr-word>
+    <tr-grammar-writing></tr-grammar-writing>
+    <div>
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+    </div>
+  </form>
+</ng-container>

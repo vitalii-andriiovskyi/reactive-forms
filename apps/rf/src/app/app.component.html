@@ -1,1 +1,17 @@
-<reactive-forms-nx-welcome></reactive-forms-nx-welcome>
+<header class="top-panel mat-elevation-z2">
+  <div class="container">
+    <nav class="top-panel-menu">
+      <a class="top-panel-menu-item" mat-button routerLink="/" routerLinkActive="mat-flat-button mat-accent"
+        [routerLinkActiveOptions]="{exact:
+        true}">Home</a>
+      <a class="top-panel-menu-item" mat-button routerLink="/translator" routerLinkActive="mat-flat-button mat-accent"
+        [routerLinkActiveOptions]="{exact:
+        true}">Translator</a>
+    </nav>
+  </div>
+</header>
+<main class="main-content">
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
+</main>
