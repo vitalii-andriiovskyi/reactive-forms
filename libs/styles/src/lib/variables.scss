@@ -1,0 +1,29 @@
+@use "sass:meta";
+
+$primary: #00796B;
+$accent: #a6afae; // Accent Color
+$fontsize: 18px; // Body Font Size
+$textcolor: hsl(0,0,25%); // Text Color
+$textcolorLight: #E8F5E9; // Text Color
+$lineheight: 1.65; // Document Line Height
+$userfont: Roboto, "Helvetica Neue", sans-serif; // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
+$link-hover-color: #00796B;
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px;
+$gutter: $grid-gutter-width;
+$arrowSize: 25px;
+
+:root {
+  --primary: #{$primary};
+  --accent: #{$accent};
+  --fontsize: #{$fontsize};
+  --textcolor: #{$textcolor};
+  --lineheight: #{$lineheight};
+  --userfont: #{meta.inspect($userfont)};
+  --systemfont: #{$systemfont};
+  --gutter: #{$gutter};
+  --arrowSize: #{$arrowSize};
+  --textcolorLight: #{$textcolorLight};
+  --linkHoverColor: #{$link-hover-color};
+}
